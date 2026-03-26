@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Cadastro de Usuário 📱
 
 Este é um projeto Android desenvolvido para fins de aprendizado em Desenvolvimento Mobile. O aplicativo permite o cadastro simples de usuários (nome e e-mail) e a visualização desses dados em uma lista.
@@ -31,3 +32,6 @@ Este é um projeto Android desenvolvido para fins de aprendizado em Desenvolvime
 
 ---
 *Projeto desenvolvido durante as aulas de Desenvolvimento Mobile.*
+=======
+# Cadastro_Usuario
+>>>>>>> 91ec96c57a54f4bdcd2cd4123da5a49dc32975e1
