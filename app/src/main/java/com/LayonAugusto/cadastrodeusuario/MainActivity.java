@@ -64,5 +64,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
+    // metodo chamado sempre que a tela volta a ficar visivel para o usuario
+    @Override
+    protected void onResume(){
+        super.onResume();
+        // avisar o adptador que a fonte de dados(listaNomes) forçando a atualização visual da lista
+        adapter.notifyDataSetChanged();
+    }
 }

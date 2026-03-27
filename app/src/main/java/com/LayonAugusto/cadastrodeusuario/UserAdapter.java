@@ -12,9 +12,10 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class UserAdapter {
-    // Classe Adapter: Gerencia a criacao e o preenchimento dos itens na RecycleView
-    public class UserAdapter extends RecyclerView
+
+
+// Classe Adapter: Gerencia a criacao e o preenchimento dos itens na RecycleView
+public class UserAdapter extends RecyclerView
             .Adapter<UserAdapter.ViewHolder> {
         // Atributo privado que armazena a referencia dos dados que serao exibidos
         private List<String> listaUsuarios;
@@ -73,6 +74,6 @@ public class UserAdapter {
             }
 
         }
-    }
 }
+
 
