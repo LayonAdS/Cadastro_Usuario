@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.joaovinicius.cadastrodeusuario.R;
@@ -45,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycle_view);
 
         // Define o layoutManager: organiza itens da lista numa coluna vertical simples
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        //Instancia o adaptador passando a nossa lista de nomes
+        adapter = new UserAdapter(listaNomes);
     }
 }
