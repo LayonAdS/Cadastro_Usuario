@@ -1,4 +1,4 @@
-package com.joaovinicius.cadastrodeusuario;
+package com.LayonAugusto.cadastrodeusuario;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,7 +39,7 @@ public class UserAdapter {
         }
         // metodo 2: vincular os dados de um objeto de lista a uma linha especifica da tela
         @Override
-        public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position){
+        public void onBindViewHolder(@NonNull ViewHolder holder, int position){
             // recupera os dados da lista de acordo com a posição que o andriod esta desenhando agora
             String nome = listaUsuarios.get(position);
 

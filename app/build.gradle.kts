@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.joaovinicius.cadastrodeusuario"
+    namespace = "com.LayonAugusto.cadastrodeusuario"
     compileSdk {
         version = release(36)
     }

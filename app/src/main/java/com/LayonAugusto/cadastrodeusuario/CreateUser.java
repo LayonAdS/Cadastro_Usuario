@@ -1,12 +1,10 @@
-package com.joaovinicius.cadastrodeusuario;
+package com.LayonAugusto.cadastrodeusuario;
 
 //Bloco de Importações
 import android.os.Bundle;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatActivity;
-import com.google.android.material.textfield.TextInputEditText;
 
 //Class principal
 public class CreateUser extends AppCompatActivity {
