@@ -10,6 +10,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.joaovinicius.cadastrodeusuario.R;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
    // declaração dos componentes visuais e do adptador da lista
@@ -18,4 +23,28 @@ public class MainActivity extends AppCompatActivity {
     UserAdapter adapter;
 
     Button btnCadastrar;
+
+    // ATENÇÃO atributo estatico(static) permite que os dados persistam na memoria
+    // enquanto o app estiver aberto e sejam acessados diretamente por outras telas
+    public static List<String> listaNomes = new ArrayList<>();
+
+    // metodo de inicialização da activity(ponto de entrada da tela)
+
+    @Override
+    protected  void onCreate(Bundle saveInstanceState){
+        super.onCreate(saveInstanceState);
+        // Vincula o arquivo de layout XML(Activy_main.xml) a essa classe java
+        setContentView(R.layout.activity_main);
+
+        // regra de negocio: insere um texto no topo da lista caso ela estaje vazia
+        if (listaNomes.isEmpty()){
+            listaNomes.add("Nomes de Cadastros");
+        }
+
+        //mapeando dos componentes do RecyclerView do XML para o objeto java
+        recyclerView = findViewById(R.id.recycle_view);
+
+        // Define o layoutManager: organiza itens da lista numa coluna vertical simples
+
+    }
 }
